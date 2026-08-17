@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.37411.7
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "terrible-cli", "TerribleDialogueConsole\terrible-cli.csproj", "{059FFCDA-5454-C3EF-79F2-74C3CE05C6BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "terrible-cli", "terrible-cli\terrible-cli.csproj", "{4973B719-B752-B97B-D7EE-A086C1161E20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{059FFCDA-5454-C3EF-79F2-74C3CE05C6BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{059FFCDA-5454-C3EF-79F2-74C3CE05C6BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{059FFCDA-5454-C3EF-79F2-74C3CE05C6BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{059FFCDA-5454-C3EF-79F2-74C3CE05C6BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4973B719-B752-B97B-D7EE-A086C1161E20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4973B719-B752-B97B-D7EE-A086C1161E20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4973B719-B752-B97B-D7EE-A086C1161E20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4973B719-B752-B97B-D7EE-A086C1161E20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
