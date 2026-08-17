@@ -1,0 +1,51 @@
+﻿set default:
+    node 0:
+    "Oye, no se si te lo he dicho, pero has escuchado del 42?"
+    choice
+    * "Ya me lo has dicho"
+        "Pues te lo digo otra vez"
+        goto node:explain
+    * "No"
+        "Pues escucha..."
+        goto node:explain
+    endchoice
+
+    node explain:
+    "Lo primero que el 42 NO es un culto, vale?"
+    "No digas que es un culto porque no es un culto"
+    "No se por que pensarias que es un culto, pero no es un culto"
+    "Te ha quedado claro?"
+    choice
+    * "Si..."
+    * "No"
+        goto node:explain
+    endchoice
+
+    "Es INCREIBLE BRO PERO ALUCINANTE"
+    "Tienes como un árbol de actividades que hacer y vas ganando experiencia y subiendo de nivel"
+    "Hay logros que te dan fortycoin™ que puedes usar para comprar varios productos de la fortyshop™"
+    "Oye estas escuchando?"
+    choice
+    * "Si..."
+    * "No"
+        "Joder, pues te lo explico otra vez"
+        goto node:explain
+    endchoice
+
+    "Bueno pues aparte de comprar cosas de la fortyshop™ puedes comprar fortyexplosivos™ que usas para bombardear los ordenadores de otras personas"
+
+    choice
+    * "Bro, que?"
+    endchoice
+
+    "No te preocupes"
+    "Es muy divertido porque si no temes por tu vida cada segundo que te pasas escribiendo codigo tienes la posibilidad de morir explotado"
+    "Y eso me motiva mazo para vivir cada dia como el ultimo y programar todo lo que pueda bro"
+    "Aparte que todo el mundo es super majo y te fortysonrien™ cada vez que pasan por tu ordenador y te ven trabajando duro"
+    "Un dia me pase las 24 horas en un ordenador y cuando ya casi no podia respirar y me dieron 20 FORTYCOIN™ y me compre un fortyexplosivo™ para cargarme a un tio que tenia al lado"
+    choice
+    * "Osea un culto"
+        "Bro bro bro bro bro"
+        "Bro bro bro"
+        goto node:explain
+    endchoice

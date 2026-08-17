@@ -1,0 +1,446 @@
+set default:
+    >> set:wakeup
+
+set wakeup:
+    >> node:start
+    node start:
+    call screen clear;
+    call play music "milk.wav";
+    "I open my eyes."
+    "I look up at the ceiling looking down on me."
+    "My chest hurts."
+
+    choice
+    * "Get up"
+        "I get up."
+        "After all, what other choice do I really have?"
+    * "Sleep"
+        "I close my eyes."
+        "After all, what point is there in doing anything else?"
+        "I sink into the sheets underneath and feel as the ground swallows me whole."
+        "I feel the walls closing in on me, trapping my body in a lock and crushing my bones down to dust."
+        "I feel my breath shortening as my lungs collapse in on themselves."
+        "Everything crumbles and I die."
+        goto node:start
+    endchoice
+
+    "I roll off my messy bed and flinch as my body hits the ground with a loud thud."
+    "I stand up on my own two feet, bones creaking and cracking as they struggle to keep themselves from crumbling, and I start to walk with no particular destination in mind."
+    "The bathroom seems like a good place to start the day."
+    "Start?"
+    "Is it daytime?"
+    "I look out the living room window as I walk past it down the hallway."
+    
+    choice
+    * "There are no windows"
+    endchoice
+
+    "There are no windows..."
+    "That's right, how could I forget?"
+    "Let me try again..."
+    "I look into the living room for no reason in particular as I walk past it down the hallway."
+    "I find great enjoyment in looking at things for no particular reason..."
+    "The bathroom's light blinds me for a few seconds as it floods a once dark room in unbearable brightness."
+    "I shield my eyes from it so as to avoid losing my most precious organs."
+    "Are eyes organs?"
+    "I take that question and store it in my pocket for later."
+    "I'm not really in the mood for philosophy right now."
+    "..."
+    "I find myself standing in the middle of the bathroom with no idea why I came here in the first place."
+    "I mean, I remember the events that lead up to this very moment, but the reasoning was quite flimsy in the first place."
+    "I came here because I felt it was the right thing to do..."
+    "But why did I feel that way?"
+    "I take that thought and shove it in my back pocket."
+    "I'll ponder on all of that later, for now I'll just pretend I came here for a reason."
+    "I walk over to the sink and wash my face with some cold, liquid water."
+    "Time to get on with my day."
+    "Day?"
+    "Is it daytime?"
+
+    call stop music;
+    choice
+    * "Get out" * "Get out" * "Get out" * "Get out" * "Get out" * "Get out" * "Get out" 
+    * "Get out" * "Get out" * "Get out" * "Get out" * "Get out" * "Get out" * "Get out" 
+    endchoice
+
+    "I get out of the bathroom."
+    "The light behind me goes out and I'm suddenly reminded of how terrified I am of the dark."
+    "The light that once threatened to blind me has now left me blinded all the same."
+    "I feel the shadows envelop my body with a freezing graze."
+    "I'm scared."
+    choice
+    * "Run"
+        goto node:run
+    * "Hide"
+        goto node:hide
+    endchoice
+
+    node run:
+    call play music "scary_fast.wav";
+    "I burst out into a sprint."
+    "I don't know why I run, but my legs move without reason."
+    "I feel something chasing behind me, just barely stepping on my ankles."
+    "I feel its long, slim arms reach out toward me just enough to brush against the back of my neck."
+    "I run and my legs feel sore."
+    "I run and the ground beneath me feels thick."
+    "I run and my breath runs out."
+    "I feel hazy."
+    "My heart is beating in my throat and in my ears and in my stomach."
+    "I keep running."
+    "Where am I?"
+    "Where am I going?"
+    "How can I keep running even though I've already reached the end?"
+    "Yet I feel it."
+    "It follows closely behind me."
+    "I run.<br>I run.<br>I run."
+    "Help me."
+    "Someone please help me."
+    "I can't feel my legs."
+    "I can't breathe."
+    "I can't see."
+    "It's getting closer."
+    "I can feel the blood pooling in my lungs as I run out of oxygen."
+    "Help me.<br>Help me.<br>Help me.<br>Help me.<br>Help me.<br>Help me.<br>Help me."
+    "The ground beneath me disappears and I fall into the void."
+    goto node:kitchen
+
+    node hide:
+    call play music "scary_slow.wav";
+    "I drop myself to the ground and crawl under the first thing I can find."
+    "What am I hiding under?"
+    "What am I hiding from?"
+    "I don't know the answer to those questions, but I feel something, somewhere, searching for me."
+    "I can hear its loud thudding steps walking up and down the hallway, slow and methodical."
+    "Searching in every corner of every room, leaving no door unopened."
+    "I hold my breath as I hear its footsteps growing closer."
+    "Louder.<br> Heavier."
+    "I feel the ground beneath me shake with every thump."
+    "Closer.<br> And closer.<br> And closer."
+    "Until it stops."
+    "I can't hear and I can't see."
+    "And my chest contracts and begs me to breathe."
+    "But I feel it right in front of me."
+    "Taunting, playing with its prey."
+    "It knows where I am, even if I don't."
+    "My chest begins to collapse on itself."
+    "My ribs crack as they fracture into my lungs, poking holes into them."
+    "The blood from my lobes spills out onto the rest of my organs, coating my insides with a deep red."
+    "My body dissolves on itself and I die."
+    goto node:kitchen
+
+    node kitchen:
+    call screen clear;
+    call play music "milk.wav";
+    "I open my eyes."
+    "I find myself standing in the middle of the kitchen with no idea why I came here in the first place."
+    "I mean, I remember the events that lead up-"
+    "I actually don't remember the events that lead up to this very moment..."
+    "I take that thought and shove it into my..."
+    "My pockets are full."
+    "Well, some thoughts aren't even worth saving."
+    "I chew the thought up and spit it into the sink."
+    "I chewed it up so it had a better chance of going down the pipes."
+    "I have a tendency to throw things into them and then they get clogged up and it's a whole thing."
+    "So chewing something up--or rather, grinding something up in general--so it occupies a smaller physical space is only logical when you want to discard of it, is it not?"
+    "In that same regard, I could have maybe burnt the thought and thrown the ashes out..."
+    "Out somewhere."
+    "Where do you throw ashes anyway?"
+    "AHHH!"
+    "I rip that thought out of my brain along with some of its flesh and burn it on the stove."
+    "I can't be asking any more questions when I have my pockets full already."
+    "I am in the kitchen."
+    "For no particular reason--or rather, for a particular reason I cannot remember..."
+    "My memory has been acting up as of late."
+    "I'll pretend I came here for a reason."
+    "Food."
+    "Kitchens have fridges, fridges contain food, food is consumed by humans to survive."
+    "Therefore, assuming I'm human, the only logical explanation to show up at a kitchen without recollection of ever doing so, is food!"
+    "I love puzzles."
+    "I walk over to the fridge with a pep in my step and open its door."
+    "I shiver as the refrigerated air brushes my skin as it breezes out."
+    "It seems the food must have breezed out as well, since there looks to be nothing but a few specs of dust, and-"
+    "Huh."
+    "Why is there a key in the fridge?"
+    "My pockets are full of thoughts already, and my brain is still sore from tearing at it earlier, so I need an answer now."
+    choice
+    * "Pick it up"
+        "I extend my hand toward the strangely placed key."
+        "A cool air envelops my fingers, threatening to snap them off if I linger for too long."
+        "I quickly snatch the key off the bottom shelf and shut the door with a soft thud."
+        "The key feels oddly warm in my hand..."
+        "It looks old and rusted, stained with years of oxidation and unnaturally bent out of shape."
+        "This doesn't belong here."
+        "I need to search for the answer as soon as I can."
+        goto set:search
+    * "Leave it"
+        "I slam the refrigerator door shut."
+        "My hands are shaking."
+        "There is a key in the fridge, so what?"
+        "If I was a key, I'd probably put myself in a fridge too."
+        "My chest feels tight."
+        "The answer is obvious: the key is there because it needs to be."
+        "If that weren't the case, the key wouldn't be there."
+        "That makes sense."
+        "My head throbs."
+        "Satisfied with my answer, I head over to my room."
+        "My vision blurs."
+        "I want to vomit."
+        goto node:loopagain
+    endchoice
+
+    node loopagain:
+    "What a wonderful day I had."
+    "Day?"
+    "..."
+    "Something doesn't feel quite right."
+    "As I toss and turn in the sheets, I notice something rattling in my pockets-"
+    "Ah..."
+    "It seems I still have some unanswered questions..."
+    "How unfortunate."
+    "It looks like I won't be getting any sleep tonight."
+    call stop music;
+    "I close my eyes."
+    "After all, what point is there in doing anything else?"
+    goto node:start
+
+
+set search:
+    >> node:options
+    node options:
+    call screen clear;
+    call stop music;
+    call stop sfx;
+    "Answers..." [block=no]
+    choice
+    * "Kitchen"
+        goto node:kitchen
+    * "Living room"
+        call screen clear;
+        goto node:livingroom
+    * "Hallway"
+        goto node:hallway
+    * "Bedroom"
+        goto node:bedroom
+    * "Entrance"
+        goto node:entrance
+    endchoice
+
+    node kitchen:
+    call play music "drip.wav";
+    "Of course, the most logical place to find an answer is where the very question was posed."
+    "My eyes saccadically jump between various objects within the kitchen."
+    "A knife thrown haphazardly on the counter."
+    "A shard of glass tucked away in a corner."
+    "A calendar torn to shreds, scattered along the floor."
+    "A window." [block=no,display=inline]
+    call wait 0.2;
+    call play sfx "static.wav";
+    "\rA wall..." [display=inline]
+    "\rA wall that seems oddly unbelonging..." [display=inline]
+    "\rA wall that beckons me to come closer..."
+    "I take a step."
+    "I look out the window" [block=no,display=inline]
+    call wait 0.2;
+    call play sfx "static.wav";
+    "\rI look at the wall..."
+    "It does not speak to me, since it is a wall."
+    "It does not look at me, since it is a wall."
+    "It does not exist, since it is a wall."
+    "There is nothing here but a wall."
+    "And yet, it feels like something is missing..."
+    "Behind the wall, a strange sound manages to pierce through the cracks."
+    "A sound that doesn't sound quite right."
+    "I clutch the key in my hand until it bleeds."
+    "I need to keep looking."
+    goto node:options
+
+    node livingroom:
+    call play music "beauty.wav";
+    "She looked dazzling as ever as she stepped into my living room."
+    "Her dress flowed freely behind her like the wind itself."
+    "She spun around to greet my gaze with a warm smile, making sure I could see every angle of her."
+    "I smiled back."
+    "The orange-tinged afternoon light found its way through the windows and settled onto her fair skin."
+    "If only for a moment, things looked perfect."
+    "'What a beautiful place you have,' she said with bright tone."
+    "'█ █████ ██ ████ ██ █████████ ██ ███ ████████ ███ ████ ██ ██,' I responded, with a slight strain in my voice."
+    "She could tell something was off about the way I'd been acting, but neither of us had brought it up."
+    "We just looked at each other with a faltering smile and a forced act of normalcy."
+    "Maybe we didn't want to stain this beautiful picture."
+    "Maybe this moment was worth holding onto for as long as we could, even as the brush strokes began to smear."
+    "But I could already feel the glass cracking beneath my feet."
+    "She kept looking at me with that smile of hers, head tilted slightly to the side as her eyes examined my expression."
+    "I stared at my feet."
+    "'What's wrong?' she finally asked."
+    "She looked about to step closer, but hesitated and remained in place."
+    "When I lifted my head, the sun was already gone and the room was soaked in an uncomfortable moonlight."
+    "'Hey, are you okay?' she now whispered, sounding more concerned."
+    "She didn't move."
+    "Neither did I."
+    "For both of us knew that the bridge we were standing on was already falling apart."
+    "And yet we stood on it pretending we wouldn't fall."
+    "Hoping that the other would plunge first and one of us would be able to hold on for a little longer."
+    "But I knew we were both plummeting together, ten feet apart."
+    "I opened my mouth, knowing this was the last time I'd ever get to see her smile."
+    call stop music;
+    "'█ ████ ████████ █ █████████ ████'"
+    "'█ █████ ██ ██████ ████ █████ ████ ███ █████ ████'"
+    "'█ ████ ██ ████ ████████ ███ █████ ██ █████ █████████ ██ ███████'"
+    "'████ ███████ ██ ███████ ██████ ████ █████ ████ ████ ███████ ██ ████ ██ ███'"
+    "'████ ████ ██████'"
+    "'███ ████ ████ ██████'"
+    "'████ ███████████ ██ █████ ███████████'"
+    "'███ █ ████ █ █████ ██ ██ █████'"
+    "'███ ██████ █ █████ ██ ████ ███ █████ ███ ███ ████ ███'"
+    "I will never forget the look on her face."
+    goto node:options
+
+    node hallway:
+    call play music "pipes.wav";
+    "The smell was horrible coming from the boiler room."
+    "A strange mix of burnt rubber and rotting flesh."
+    "A stench so repugnant it managed to pierce through the clothing I'd wrapped around my nose."
+    "How long had it been?"
+    "Surely there would be nothing left of it by now?"
+    "But it was evident, not only by the smell, but the sound..."
+    "That horrifying sound that kept me up at night."
+    "That incessant tapping against every wall of every room."
+    "It pierced my eardrums and dug into my skull."
+    "It was enough to drive anyone to madness."
+    "But I guess I'd already gotten there myself, hadn't I?"
+    "I could feel bile rising up in my throat."
+    "That fucking smell."
+    "I hadn't eaten in what felt like months, but I'd long since lost track of time."
+    "I swallowed what saliva had pooled in my mouth and stared down the hallway at that old, rusty door."
+    "My stomach lurched just thinking about it."
+    "I had backed myself into a corner, locked myself into a cage and tied a noose around my neck."
+    "It was only a matter of time..."
+    "I took a step forward."
+    "The smell was horrible, coming from the boiler room."
+    "Like burning flesh and decomposing organs."
+    "I'd gone insane long before that."
+    "I swallowed what vomit had risen up to my mouth."
+    "I could hear the pleading thuds of a rotting corpse."
+    "Surely I wouldn't have to look at it again."
+    "I took another step forward, then another and then again."
+    "The smell, unbearable, coming from the boiler room."
+    "I clutched my stomach as it churned and twisted painfully."
+    "My throat burned from the acids so desperately trying to leave my body."
+    "I stared at the door in front of me." [display=inline]
+    call play sfx "static.wav";
+    "\rI stare at the door in front of me. "
+    "It looks old and rusted, stained with years of oxidation and dented in an unnatural way."
+    "I look down at the key in my hand."
+    ""
+
+    node bedroom:
+    call screen clear;
+    "...b... asleep f..."
+    "...pills..."
+    "-sn't responded...looks to be..."
+    "..."
+    "..."
+    "-tempt..."
+    "C.. you h..?"
+    "Can y.. hear...?"
+    "Can you hear me?"
+    "No response."
+    "Hey, can you hear me?"
+    "Can you open your eyes?"
+    call screen clear;
+    call play music "milk.wav";
+    "I open my eyes"
+    "I find myself in a place I don't recognize, surrounded by cables and strange machinery."
+    "The bed feels stiff and the blanket is too thin to properly warm my body, while the ceiling light tries to burn a hole through my retinas."
+    "It's only after a few seconds that I notice a large tube seemingly shoved down my throat and pumping a strange dark substance into my stomach."
+    "I quickly pull the device out, unsure if it might already be too late for me."
+    "My head is fuzzy and it feels like my hands are covered in wool."
+    "Looking around some more, I realize this isn't a small room at all, but a large one separated by thin blue curtains in all directions."
+    "It suddenly becomes clear just where I am."
+    "But before I can open my mouth to scream, a hand grabs me from behind the curtains and straps me down to the bed."
+    "The disembodied hand continues to restrain me as I try to fight back, but I soon notice the sharp stinger poking out of its finger."
+    "My entire body freezes as it inches closer to my arm."
+
+    node entrance:
+    "I walk over to what I assume is the entrance to this place."
+    "A small room that connects to the rest of the rooms in this maze of interconnected boxes."
+    "The first room in chronological order."
+    "A door stands before me."
+    "A white, unassuming door."
+    "A handle situated in the middle to the left."
+    "The handle does not have a key hole, and neither does any other part of the door."
+    "An entrance should have some sort of locking mechanism, should it not?"
+    "..."
+    "An entrance?"
+    "To where?"
+    "Am I not already inside the place this door leads to?"
+    "Can you enter somewhere twice?"
+    "Thrice?"
+    "AGHHH!"
+    "These questions are making my head hurt."
+    "Answers, answers..."
+    "If not an entrance, then what..."
+    "..."
+    "Ah..."
+    "I understand..."
+    "I couldn't quite see it from this perspective, but if I tilt my thoughts a tad sideways I can clearly see the difference."
+    "The doorway in front of me, white and unassuming, is anything but."
+    "It is a magical gate."
+    "A fulfiller of dreams."
+    "You see, an entrance is only an entrance from one side."
+    "However, defining something so superficially is quite -- for the lack of a better term -- superficial."
+    "Take a simple object, or concept such as the one before me, and rotate it however many radians you desire."
+    "Suddenly, its definition falls apart."
+    "What is an entrance viewed from the side?"
+    "A sidetrance?"
+    "Creating a new definition for every angle of every concept and every object must have been too tiresome for the writers of the universe, which is why one must take it upon themselves to do exactly that."
+    "Make meaning out of what you can't make sense of."
+    "An \"interpretation\", if you will."
+    "My interpretation, flawed as it may be, is that the object facing me is exactly what I need it to be."
+    "One may see it as an entrance, because they require it to be."
+    "One may see it as a mere obstacle of where they desire to go."
+    "I see, before me, an exit."
+    "An escape."
+    "A dream come true."
+    "A new question arises inside my skull, though one I can safely answer here and now:"
+    "Should I wake up, or keep dreaming?"
+    choice
+    * "Leave"
+        "It seems the decision has been made for me."
+        "I take the key in my hand and swallow it whole."
+        "\"Tastes like blood.\""
+        "The handle turns on its own, and the door opens outward to reveal everything I've ever wanted."
+        "\"I'm free.\""
+        goto set:ending_escape
+    * "Stay"
+        "After all, what other choice do I really have?"
+        "I stare at the wall in front of me, wondering what I'm doing in this empty room to begin with."
+        "I clutch the small metal object in my hand and make my way out of a room that doesn't exist."
+        goto node:options
+    endchoice
+
+set ending_escape:
+    node 0:
+    call screen clear;
+    call play music "escape.wav";
+    "The sun shone brightly in the clear blue sky."
+    "A soft wind gently rustled the leaves of nearby trees and flowers, swaying them in a hypnotizing rhythm."
+    "Magpies and sparrows flapped and fluttered up and down tall trees, gliding along the calm breeze."
+    "A sense of freedom flowed along the grass, waving from side to side."
+    "The streets were mostly empty around this area, save for a few cars that had probably lost their way."
+    "A kid and her mother walked down the streets, basking in the sunlight and taking in the freshness of the air."
+    "The kid smiled as she skipped up and down with her mother's hand held tight."
+    "She was going to her favorite park, with her favorite person in the whole wide world."
+    "The seesaw was this child's most beloved ride, since she got to see her momma's smile as they jumped up and down together."
+    "Her mother smiled down at her, finding the little girl's honest anticipation irresistibly adorable."
+    "They both loved each other like nothing else, and they cherished every second they got to spend together like this."
+    "The woman longed for the feeling of wonder in her daughter's eyes, and the girl hoped she could one day be as beautiful as her mom."
+    "What the mother and daughter, walking hand in hand, did not yet realize is that life is often not as straight a path as the one they were on."
+    "For what they saw laying by the side of the road, was something they could never forget."
+    "The woman quickly shielded her daughter's eyes, while she struggled to avert hers."
+    "The girl was confused, but she didn't mind this sudden game of hide and seek as long as she got to spend more time with her momma."
+    "The mother was terrified, hurriedly taking her kid into her arms and running back to the house."
+    "What they both didn't understand was that, on that seemingly ordinary day, they had laid their eyes on the single purest expression of freedom."
+    "And as the birds flew away, and the sun started to set, one thing became clear:"
+    "This was the only way it could have ended."
+    goto END

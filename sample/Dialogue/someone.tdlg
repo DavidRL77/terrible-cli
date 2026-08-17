@@ -1,0 +1,55 @@
+set default:
+    node 0:
+    "Hey, can I tell you something really quickly?"
+    "I know it's a bit sudden, but I really need to get this off my chest..."
+    choice
+    * "Sure"
+        "Alright, but you have to promise not to judge..."
+        choice
+        * "I promise"
+            "Okay, and also you have to promise not to tell anyone..."
+            choice
+            * "Yes, I promise"
+                "Alright..."
+                "Also..."
+                choice
+                * "Just fucking say it!"
+                    "Okay, okay..."
+                    goto node:accept
+                endchoice
+            * "Dude, shut the fuck up"
+                goto node:decline
+            endchoice
+        * "I don't promise"
+            goto node:decline
+        endchoice
+    * "I don't have time for this"
+        goto node:decline
+    endchoice
+    goto node:decline
+
+    node decline:
+    "Ugh, I knew it was stupid to ask..."
+    "I'm so sorry to have wasted your time like this."
+    choice
+    * "No problem"
+        "Yeah..."
+    * "Yeah, you better be"
+        "Woah..."
+        "No need to get so heated man..."
+        "I guess I'll just have to bottle this forever then..."
+    endchoice
+    "Anyway, I guess I shouldn't waste any more of your time."
+    goto END
+
+    node accept:
+    "I actually don't have anything to say..."
+    "I really wanted to talk to someone and I wasn't really thinking about what I was saying."
+    "And all of a sudden you're promising all these things..."
+    "I just kind of felt bad for leading you on, so I was waiting for you to shut me up..."
+    "This is awkward..."
+    choice
+    * "You're so dumb"
+        "Yeah..."
+    endchoice
+    goto END

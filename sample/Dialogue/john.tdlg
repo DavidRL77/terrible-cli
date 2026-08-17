@@ -1,0 +1,55 @@
+set default:
+    node 0:
+    "Hey, it's me: John!"
+    "Very nice to meet you."
+    "My name is John."
+    "Nice to meat you."
+    "John is mine name."
+    "Pleasure to make your acquaintance."
+    "John."
+    goto node:1 break
+
+    node 1:
+    "Is there anything you needed?"
+    "Oh, you're John? Nice to meet you."
+    "Pleasure."
+    goto set:banter break
+
+set banter:
+    >> random
+    node 0:
+    "Have we met before?"
+    "Ah, my apologies, I must've not introduced myself."
+    "My name is..."
+    "My name..."
+    goto random break
+
+    node 1:
+    "Bienvenido, ¿cómo se encuentra?"
+    "Ah, me llamo Juan, encantado de conocerle."
+    "Juan?"
+    "Sí, encantado."
+    "Gracias."
+    goto random break
+
+    node 2:
+    "Is there anything I can help you with, John?"
+    "Oh, it's not bother at all! That's what I'm here for, isn't it?"
+    "Please, anything you need."
+    "My name?"
+    "My name..."
+    "My name..."
+    goto set:name break
+
+    node 3:
+    "Careful what you wish for, it might just come true one day!"
+    "Careful what you think of, it might materialize eventually!"
+    "Careful what you ask, you might just end up regretting it!"
+    goto random break
+
+set name:
+    node 0:
+    "My name..."
+    "My name..."
+    "My name..."
+    goto node:0 break
